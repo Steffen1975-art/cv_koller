@@ -27,7 +27,7 @@
             color: #0070D2; /* Salesforce Blau für den Namen */
         }
         
-        h2, h3 { /* Kleinere Überschriften */
+        h2, h3, h4.section-subtitle { /* Kleinere Überschriften und Ausbildung/Studiumstitel */
             color: #001639; /* Salesforce Dunkelblau / Capgemini Spade-ähnlich */
         }
         
@@ -133,7 +133,7 @@
             .section-break-avoid { page-break-before: avoid; } /* Verhindert Umbruch vor diesem Element, wenn möglich */
             .section-break-always { page-break-before: always; } /* Erzwingt Umbruch vor diesem Element */
             
-            .berufserfahrung-item, .fortbildung-item, .sprachen-item, .interessen-item {
+            .berufserfahrung-item, .fortbildung-item, .sprachen-item, .interessen-item, .ausbildung-item, .hochschulbildung-item {
                 page-break-inside: avoid;
             }
              h1, h2, h3, h4, h5, h6 {
@@ -269,58 +269,51 @@
             </ul>
         </section>
 
-        <section class="mb-4 section-break-avoid">
+        <section class="mb-4 section-break-avoid hochschulbildung-item">
             <h2 class="section-title">
                 <span class="lang-element" lang="de">HOCHSCHULBILDUNG</span>
                 <span class="lang-element" lang="en" style="display:none;">UNIVERSITY EDUCATION</span>
             </h2>
             <div class="text-sm">
                 <div class="mb-3">
-                    <h4 class="text-base font-semibold text-gray-800">
+                    <h3 class="text-base font-semibold section-subtitle">
                         <span class="lang-element" lang="de">Studium „Betriebswirtschaftslehre“</span>
                         <span class="lang-element" lang="en" style="display:none;">Studies in "Business Administration"</span>
-                    </h4>
-                    <p class="text-sm text-gray-600">
+                    </h3>
+                    <p class="text-xs text-gray-500 mb-1">
                         <span class="lang-element" lang="de">Hochschule Nürtingen</span>
                         <span class="lang-element" lang="en" style="display:none;">Nuertingen University</span>
                     </p>
-                    <div class="mt-1 pl-4">
-                        <p>
-                            <strong class="font-semibold text-blue-600">
-                                <span class="lang-element" lang="de">Abschluss:</span>
-                                <span class="lang-element" lang="en" style="display:none;">Degree:</span>
-                            </strong>
-                            <span class="lang-element" lang="de"> Diplom-Betriebswirt</span>
-                            <span class="lang-element" lang="en" style="display:none;"> Diplom-Betriebswirt (German equivalent to MBA)</span>
-                        </p>
-                        <p class="mt-1">
-                            <strong class="font-semibold text-blue-600">
-                                <span class="lang-element" lang="de">Schwerpunkte:</span>
-                                <span class="lang-element" lang="en" style="display:none;">Majors:</span>
-                            </strong>
-                            <span class="lang-element" lang="de"> Wirtschaftsinformatik, Organisation und Projektmanagement, Finanzmanagement und Bankwirtschaftslehre</span>
-                            <span class="lang-element" lang="en" style="display:none;"> Business Informatics, Organization and Project Management, Financial Management and Banking</span>
-                        </p>
-                    </div>
+                    <p class="text-sm mt-1">
+                        <strong class="font-semibold text-blue-600">
+                            <span class="lang-element" lang="de">Diplom-Betriebswirt</span>
+                            <span class="lang-element" lang="en" style="display:none;">Diplom-Betriebswirt (German equivalent to MBA)</span>
+                        </strong>
+                        <span class="lang-element" lang="de"> in den Bereichen Wirtschaftsinformatik, Organisation und Projektmanagement, Finanzmanagement und Bankwirtschaftslehre.</span>
+                        <span class="lang-element" lang="en" style="display:none;"> in the fields of Business Informatics, Organization and Project Management, Financial Management and Banking.</span>
+                    </p>
                 </div>
             </div>
         </section>
 
-        <section class="mb-4 section-break-avoid">
+        <section class="mb-4 section-break-avoid ausbildung-item">
             <h2 class="section-title">
                 <span class="lang-element" lang="de">AUSBILDUNG</span>
                 <span class="lang-element" lang="en" style="display:none;">VOCATIONAL TRAINING</span>
             </h2>
-            <p class="text-sm">
-                <strong>
+            <div class="text-sm"> <h3 class="text-base font-semibold section-subtitle">
                     <span class="lang-element" lang="de">Finanzassistent / Bankkaufmann (IHK)</span>
                     <span class="lang-element" lang="en" style="display:none;">Financial Assistant / Bank Clerk (IHK)</span>
-                </strong> – 
-                <span class="text-gray-600">
-                    <span class="lang-element" lang="de">Fundament für breites kaufmännisches, prozessuales und finanzwirtschaftliches Verständnis</span>
-                    <span class="lang-element" lang="en" style="display:none;">Foundation for broad commercial, procedural, and financial understanding</span>
-                </span>
-            </p>
+                </h3>
+                <p class="text-xs text-gray-500 mb-1">
+                    <span class="lang-element" lang="de">Landesbank Baden-Württemberg</span>
+                    <span class="lang-element" lang="en" style="display:none;">Landesbank Baden-Württemberg</span>
+                </p>
+                <p class="text-sm text-gray-600 mt-1">
+                    <span class="lang-element" lang="de">Fundament für breites kaufmännisches, prozessuales und finanzwirtschaftliches Verständnis.</span>
+                    <span class="lang-element" lang="en" style="display:none;">Foundation for broad commercial, procedural, and financial understanding.</span>
+                </p>
+            </div>
         </section>
         
         <div class="section-break-always"></div> 
