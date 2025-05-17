@@ -23,17 +23,21 @@
         }
 
         /* Salesforce & Capgemini angelehnte Farben */
-        h1, h2, h3 {
+        h1 { /* Name oben */
+            color: #0070D2; /* Salesforce Blau für den Namen */
+        }
+        
+        h2, h3 { /* Kleinere Überschriften */
             color: #001639; /* Salesforce Dunkelblau / Capgemini Spade-ähnlich */
         }
         
-        .section-title {
-            border-bottom: 2px solid #0070D2; /* Salesforce Blau */
+        .section-title { /* Hauptüberschriften der Sektionen */
+            border-bottom: 2px solid #0070D2; /* Salesforce Blau für Linie */
             padding-bottom: 0.25rem;
             margin-bottom: 0.75rem;
             font-size: 1.125rem; /* 18px */
             font-weight: 600;
-            color: #001639; /* Salesforce Dunkelblau */
+            color: #0070D2; /* Salesforce Blau für Text der Sektionsüberschrift */
         }
 
         ul.custom-bullets {
@@ -48,24 +52,16 @@
             page-break-inside: avoid;
         }
 
-        ul.custom-bullets > li::before {
+        ul.custom-bullets > li::before { /* Gilt für alle Haupt-Bullet-Points */
             content: "•"; 
-            color: #0070D2; /* Salesforce Blau */
+            color: #0070D2; /* Einheitliches Salesforce Blau für alle Haupt-Bullets */
             font-weight: bold;
             position: absolute;
             left: 0.5em; 
             top: 0; 
         }
         
-        ul.kernkompetenzen-bullets > li::before {
-             color: #001639; /* Salesforce Dunkelblau für Hervorhebung */
-        }
-        
-        ul.custom-bullets ul {
-            margin-top: 0.25rem;
-            margin-left: 0.5em; 
-        }
-         ul.custom-bullets ul > li::before {
+        ul.custom-bullets ul > li::before { /* Sub-Bullet-Points */
             content: "◦"; 
             color: #00A1E0; /* Helleres Salesforce/Capgemini Blau für Sub-Bullets */
         }
@@ -229,12 +225,12 @@
             <div class="text-sm leading-relaxed">
                 <div class="lang-element" lang="de">
                     <p class="mb-2">Als erfahrener <strong>Program Owner & Solution Manager</strong> und ausgewiesener <strong>Automotive CRM-Experte</strong> mit insgesamt über <strong>22 Jahren Branchenerfahrung</strong> gestalte ich seit über <strong>6 Jahren erfolgreich mit Salesforce</strong> die digitale Transformation von Kundenbeziehungsprozessen bei Mercedes-Benz.</p>
-                    <p class="mb-2">Meine Kernkompetenz liegt in der <strong>strategischen Führung, Lösungsgestaltung und Implementierung komplexer, europaweiter Salesforce-basierter CRM-Programme (Sales, Service, Marketing, Experience & Data Cloud)</strong>. Diese Lösungen unterstützen flexibel <strong>diverse Vertriebsmodelle (Agentur & Retail)</strong>, decken <strong>Sales, After Sales & Finance Use Cases</strong> ab und sind tief in POS-Systeme integriert (Fokus <strong>Sales Activity Management - SAM</strong>). Nutzung durch >5.000 Anwender in 16 europäischen Märkten.</p>
+                    <p class="mb-2">Meine Kernkompetenz liegt in der <strong>strategischen Führung, Lösungsgestaltung und Implementierung komplexer, europaweiter Salesforce-basierter CRM-Programme (Sales, Service, Marketing, Experience & Data Cloud)</strong>. Diese Lösungen unterstützen flexibel <strong>diverse Vertriebsmodelle (Agentur & Retail)</strong>, decken <strong>Sales, After Sales & Finance Use Cases</strong> ab und sind tief in POS-Systeme integriert (Fokus <strong>Sales Activity Management - SAM</strong>). Aktuell von >5.000 Anwendern in 16 europäischen Märkten genutzt, mit dem Ziel, diese Zahl durch weitere Go-Lives in diesem Jahr auf <strong>>10.000 Anwender</strong> zu steigern.</p>
                     <p>Ich verbinde Automotive-Expertise mit agiler Produktentwicklung, dem Einsatz innovativer Technologien (inkl. <strong>KI-Lösungen wie Salesforce Agentforce</strong>) und der Leitung <strong>anspruchsvoller Transitionsprojekte ganzer Entwicklungsmannschaften mit signifikanter Effizienzsteigerung (ca. 40%)</strong>. Fokus: Schaffung einer <strong>standardisierten, harmonisierten europäischen CRM-Landschaft</strong> für zukünftige Marktanforderungen und exzellente Kundenerlebnisse.</p>
                 </div>
                 <div class="lang-element" lang="en" style="display:none;">
                     <p class="mb-2">As an experienced <strong>Program Owner & Solution Manager</strong> and proven <strong>Automotive CRM Expert</strong> with over <strong>22 years of industry experience</strong>, I have been successfully shaping the digital transformation of customer relationship processes at Mercedes-Benz with Salesforce for over <strong>6 years</strong>.</p>
-                    <p class="mb-2">My core competence lies in the <strong>strategic leadership, solution design, and implementation of complex, Europe-wide Salesforce-based CRM programs (Sales, Service, Marketing, Experience & Data Cloud)</strong>. These solutions flexibly support <strong>various sales models (agency & retail)</strong>, cover <strong>Sales, After Sales & Finance Use Cases</strong>, and are deeply integrated into POS systems (focus on <strong>Sales Activity Management - SAM</strong>). Used by >5,000 users in 16 European markets.</p>
+                    <p class="mb-2">My core competence lies in the <strong>strategic leadership, solution design, and implementation of complex, Europe-wide Salesforce-based CRM programs (Sales, Service, Marketing, Experience & Data Cloud)</strong>. These solutions flexibly support <strong>various sales models (agency & retail)</strong>, cover <strong>Sales, After Sales & Finance Use Cases</strong>, and are deeply integrated into POS systems (focus on <strong>Sales Activity Management - SAM</strong>). Currently used by >5,000 users in 16 European markets, with the goal to increase this number to <strong>>10,000 users</strong> through further go-lives this year.</p>
                     <p>I combine automotive expertise with agile product development, the use of innovative technologies (including <strong>AI solutions like Salesforce Agentforce</strong>), and the leadership of <strong>demanding transition projects for entire development teams with significant efficiency increases (approx. 40%)</strong>. Focus: Creation of a <strong>standardized, harmonized European CRM landscape</strong> for future market requirements and excellent customer experiences.</p>
                 </div>
             </div>
@@ -245,7 +241,7 @@
                 <span class="lang-element" lang="de">KERNKOMPETENZEN</span>
                 <span class="lang-element" lang="en" style="display:none;">CORE COMPETENCIES</span>
             </h2>
-            <ul class="text-sm custom-bullets kernkompetenzen-bullets">
+            <ul class="text-sm custom-bullets">
                 <li>
                     <span class="lang-element" lang="de"><strong>Salesforce Platform Leadership:</strong> Sales, Service, Marketing, Experience & Data Cloud</span>
                     <span class="lang-element" lang="en" style="display:none;"><strong>Salesforce Platform Leadership:</strong> Sales, Service, Marketing, Experience & Data Cloud</span>
@@ -334,8 +330,8 @@
                 </p>
                 <ul class="text-sm custom-bullets">
                     <li>
-                        <span class="lang-element" lang="de"><strong>Strategische CRM-Programmführung (Salesforce):</strong> Gesamtverantwortung für Strategie, Lösungsarchitektur und Weiterentwicklung der europaweiten MB CRM-Landschaft. Sicherstellung der Unterstützung diverser Vertriebsmodelle (Agentur, Retail) und umfassender Sales, After Sales & Finance Use Cases. Fokus auf <strong>Sales Activity Management (SAM)</strong> und tiefe POS-Integration.</span>
-                        <span class="lang-element" lang="en" style="display:none;"><strong>Strategic CRM Program Leadership (Salesforce):</strong> Overall responsibility for strategy, solution architecture, and further development of the Europe-wide MB CRM landscape. Ensuring support for various sales models (agency, retail) and comprehensive Sales, After Sales & Finance Use Cases. Focus on <strong>Sales Activity Management (SAM)</strong> and deep POS integration.</span>
+                        <span class="lang-element" lang="de"><strong>Strategische CRM-Programmführung (Salesforce):</strong> Gesamtverantwortung für Strategie, Lösungsarchitektur und Weiterentwicklung der europaweiten MB CRM-Landschaft. Sicherstellung der Unterstützung diverser Vertriebsmodelle (Agentur, Retail) und umfassender Sales, After Sales & Finance Use Cases. Fokus auf <strong>Sales Activity Management (SAM)</strong> und tiefe POS-Integration. Ziel: Steigerung der Nutzerzahl auf <strong>>10.000 Anwender</strong> durch weitere Go-Lives in diesem Jahr.</span>
+                        <span class="lang-element" lang="en" style="display:none;"><strong>Strategic CRM Program Leadership (Salesforce):</strong> Overall responsibility for strategy, solution architecture, and further development of the Europe-wide MB CRM landscape. Ensuring support for various sales models (agency, retail) and comprehensive Sales, After Sales & Finance Use Cases. Focus on <strong>Sales Activity Management (SAM)</strong> and deep POS integration. Goal: Increase user base to <strong>>10,000 users</strong> through further go-lives this year.</span>
                     </li>
                     <li>
                         <span class="lang-element" lang="de"><strong>Organisatorische Transition & Effizienzsteigerung:</strong> Leitung der strategischen Transition der <strong>gesamten MB CRM Entwicklungsmannschaft</strong> (Architektur, Release Mgmt., Support) von extern (Infosys) zu intern (MBRDI), resultierend in <strong>ca. 40% Effizienzsteigerung</strong> bei gleichbleibendem Output. Verantwortung für Change Management, Prozessoptimierung, Wissenstransfer.</span>
@@ -379,8 +375,8 @@
                 </p>
                 <ul class="text-sm custom-bullets">
                     <li>
-                        <span class="lang-element" lang="de"><strong>Europaweite Salesforce CRM-Implementierung:</strong> Leitung der erfolgreichen Einführung und Skalierung von OneCRM für <strong>>5.000 Nutzer in 16 europäischen Märkten</strong> (Retail, After Sales).</span>
-                        <span class="lang-element" lang="en" style="display:none;"><strong>Europe-wide Salesforce CRM Implementation:</strong> Led the successful introduction and scaling of OneCRM for <strong>>5,000 users in 16 European markets</strong> (Retail, After Sales).</span>
+                        <span class="lang-element" lang="de"><strong>Europaweite Salesforce CRM-Implementierung:</strong> Leitung der erfolgreichen Einführung und Skalierung von OneCRM für <strong>>3.000 Nutzer in 16 europäischen Märkten</strong> (Retail, After Sales).</span>
+                        <span class="lang-element" lang="en" style="display:none;"><strong>Europe-wide Salesforce CRM Implementation:</strong> Led the successful introduction and scaling of OneCRM for <strong>>3,000 users in 16 European markets</strong> (Retail, After Sales).</span>
                     </li>
                     <li>
                         <span class="lang-element" lang="de"><strong>Legacy-Ablösung & Kostenreduktion:</strong> Erfolgreiche Migration und Ablösung von <strong>>8 heterogenen Legacy-CRM-Systemen</strong>, resultierend in <strong>signifikanter Reduktion von Betriebskosten und Komplexität</strong>.</span>
